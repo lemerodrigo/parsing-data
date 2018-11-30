@@ -23,9 +23,9 @@ titlesWithMoreThan2HoursAndAHalf();
 // Returns an array of all Countries that have produced titles.
 // field: country
 //  !!!!!!!!!!!!!!!!!!!!!!!!! did not understand the query.
-// function allCountries() {
-//   return data.filter(el => el.movie_title);
-// }
+function allCountries() {
+  return data.filter(el => el.country === 'Brazil').map(e => e.movie_title + e.country);
+}
 console.log(allCountries())
 // Returns an array of titles name with the top ten titles
 // field: imdb_score
