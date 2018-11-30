@@ -16,6 +16,10 @@ function titlesWithMoreThan2HoursAndAHalf() {
 // Returns an array of all Countries that have produced titles.
 // field: country
 function allCountries() {
+  arrCountries = [];
+  data.map((movie)=>{
+     // if(!arrCounties.includes())
+  })
 
 }
 
@@ -30,5 +34,13 @@ newData.sort((a, b) => b.imdb_score - a.imdb_score);
 // Returns the number of titles that were launched in 2015.
 // field: title_year
 function titlesFrom2015() {
+  let movies15 = [];
+  data.map((movie)=>{
+    if (movie.title_year === 2015){
+      movies15++
+    }
+    return null;
+  });
+  return movies15;
   
 }
